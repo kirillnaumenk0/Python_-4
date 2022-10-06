@@ -25,5 +25,8 @@ def simple_multiplier(num: int):
 
     
 
-num = int(input('Введите натуральное чило :'))
-simple_multiplier(num)
+num = int(input('Введите натуральное чило: '))
+if(num < 2):
+    print('Ошибка')
+else:
+    simple_multiplier(num)
