@@ -6,3 +6,9 @@
 # out
 # 9.000000
 
+num = float(input('Enter a real number: '))
+
+_, accu = input("Enter the required accuracy '0.0001': ").split(".")
+print(f"{num:.{len(accu)}f}")
+
+# задачу сделал после семинара не понял сначала как это работает

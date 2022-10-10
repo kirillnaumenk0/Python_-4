@@ -14,13 +14,15 @@
 
 
 def simple_multiplier(num: int):
+    new_list = []
     i = 2
     while(num !=1):
         if(num % i==0):
-            print(i, end=' ')
+            new_list.append(i)
             num/=i
         else:
             i+=1
+    return new_list
     
 
     
@@ -29,4 +31,4 @@ num = int(input('Введите натуральное чило: '))
 if(num < 2):
     print('Ошибка')
 else:
-    simple_multiplier(num)
+    print(simple_multiplier(num))
